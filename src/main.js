@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import VTooltip from 'v-tooltip'
+
+const app = createApp(App);
+app.use(VTooltip);
+app.mount('#app')
